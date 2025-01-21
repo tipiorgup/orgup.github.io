@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Claudia L. Gómez Flores - CV</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const CV = () => {
+            return (
+                <div className="min-h-screen bg-gray-50">
+                    <nav className="bg-white shadow-lg">
+                        <div className="max-w-6xl mx-auto px-4">
+                            <div className="flex justify-between">
+                                <div className="py-4">
+                                    <h1 className="text-xl font-semibold">Dr. Claudia L. Gómez Flores</h1>
+                                </div>
+                                <div className="flex space-x-4">
+                                    <a href="#experience" className="py-4 px-2 text-gray-500 hover:text-blue-500">Experience</a>
+                                    <a href="#publications" className="py-4 px-2 text-gray-500 hover:text-blue-500">Publications</a>
+                                    <a href="#skills" className="py-4 px-2 text-gray-500 hover:text-blue-500">Skills</a>
+                                    <a href="#contact" className="py-4 px-2 text-gray-500 hover:text-blue-500">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div className="max-w-6xl mx-auto px-4 py-8">
+                        <header className="mb-12 text-center">
+                            <h1 className="text-4xl font-bold text-gray-800 mb-4">Dr. Claudia L. Gómez Flores</h1>
+                            <p className="text-xl text-gray-600">Computational Chemistry | Machine Learning | Biophysics</p>
+                            <div className="mt-4 flex justify-center space-x-4">
+                                <a href="mailto:your.email@example.com" className="text-blue-500 hover:text-blue-700">
+                                    <span className="sr-only">Email</span>
+                                    <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/yourusername" className="text-gray-600 hover:text-gray-800">
+                                    <span className="sr-only">GitHub</span>
+                                    <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </header>
+
+                        <section id="experience" className="mb-12">
+                            <h2 className="text-2xl font-bold mb-6">Research Experience</h2>
+                            <div className="space-y-6">
+                                <div className="bg-white shadow rounded-lg p-6">
+                                    <div className="flex justify-between items-start">
+                                        <div>
+                                            <h3 className="text-xl font-semibold">Postdoctoral Researcher</h3>
+                                            <p className="text-gray-600">Max-Planck-Institut for Polymer Research</p>
+                                        </div>
+                                        <span className="text-gray-500">03/2024 - Present</span>
+                                    </div>
+                                    <ul className="mt-4 space-y-2">
+                                        <li>• Research on self-assembling peptides and intrinsically disordered proteins</li>
+                                        <li>• Development of machine learning approaches for peptide prediction</li>
+                                        <li>• Maintenance of internal peptide database systems</li>
+                                    </ul>
+                                </div>
+                                
+                                <div className="bg-white shadow rounded-lg p-6">
+                                    <div className="flex justify-between items-start">
+                                        <div>
+                                            <h3 className="text-xl font-semibold">Ph.D. Researcher</h3>
+                                            <p className="text-gray-600">Karlsruhe Institute of Technology</p>
+                                        </div>
+                                        <span className="text-gray-500">2019 - 2022</span>
+                                    </div>
+                                    <ul className="mt-4 space-y-2">
+                                        <li>• Implementation of neural networks for energy interaction modeling</li>
+                                        <li>• Development of QM/MM simulation methodologies</li>
+                                        <li>• Creation of scientific software with graphical interfaces</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="publications" className="mb-12">
+                            <h2 className="text-2xl font-bold mb-6">Selected Publications</h2>
+                            <div className="space-y-4">
+                                <div className="bg-white shadow rounded-lg p-6">
+                                    <h3 className="font-semibold">Accurate Free Energies for Complex Condensed-Phase Reactions Using an Artificial Neural Network Corrected DFTB/MM Methodology</h3>
+                                    <p className="text-gray-600">Journal of Chemical Theory and Computation (2022)</p>
+                                </div>
+                                <div className="bg-white shadow rounded-lg p-6">
+                                    <h3 className="font-semibold">Electrostatic interactions contribute to the control of intramolecular thiol–disulfide isomerization in a protein</h3>
+                                    <p className="text-gray-600">Physical Chemistry Chemical Physics (2021)</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="skills" className="mb-12">
+                            <h2 className="text-2xl font-bold mb-6">Technical Expertise</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div className="bg-white shadow rounded-lg p-6">
+                                    <h3 className="text-xl font-semibold mb-4">Computational Methods</h3>
+                                    <ul className="space-y-2">
+                                        <li>• Molecular Dynamics</li>
+                                        <li>• QM/MM Simulations</li>
+                                        <li>• Ab initio Methods</li>
+                                        <li>• Machine Learning</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-white shadow rounded-lg p-6">
+                                    <h3 className="text-xl font-semibold mb-4">Experimental Techniques</h3>
+                                    <ul className="space-y-2">
+                                        <li>• Spectroscopy</li>
+                                        <li>• Protein Expression</li>
+                                        <li>• Structural Analysis</li>
+                                        <li>• Biochemical Assays</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-white shadow rounded-lg p-6">
+                                    <h3 className="text-xl font-semibold mb-4">Software Development</h3>
+                                    <ul className="space-y-2">
+                                        <li>• Scientific Python</li>
+                                        <li>• Data Analysis</li>
+                                        <li>• GUI Development</li>
+                                        <li>• Version Control</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="contact" className="mb-12">
+                            <h2 className="text-2xl font-bold mb-6">Contact</h2>
+                            <div className="bg-white shadow rounded-lg p-6">
+                                <p className="text-gray-600 mb-4">Feel free to reach out for collaborations or opportunities:</p>
+                                <div className="space-y-2">
+                                    <div className="flex items-center space-x-2">
+                                        <svg className="h-5 w-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                        </svg>
+                                        <a href="mailto:your.email@example.com" className="text-blue-500 hover:text-blue-700">your.email@example.com</a>
+                                    </div>
+                                    <div className="flex items-center space-x-2">
+                                        <svg className="h-5 w-5 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        <a href="https://github.com/yourusername" className="text-blue-500 hover:text-blue-700">GitHub Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<CV />, document.getElementById('root'));
+    </script>
+</body>
+</html>
